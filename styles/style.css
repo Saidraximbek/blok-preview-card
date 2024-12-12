@@ -1,0 +1,136 @@
+:root {
+  --white-color: #fff;
+  --orange-color: rgba(244, 208, 78, 1);
+  --black-color: rgba(17, 17, 17, 1);
+}
+
+/* figtree-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Figtree";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/figtree-v6-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* figtree-800 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Figtree";
+  font-style: normal;
+  font-weight: 800;
+  src: url("../fonts/figtree-v6-latin-800.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+img {
+  display: flex;
+  object-fit: cover;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Figtree";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: var(--orange-color);
+}
+
+main {
+  flex-grow: 1;
+}
+
+.container {
+  width: 100%;
+  max-width: 37.6rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.card {
+  padding: 2.4rem;
+  background-color: var(--white-color);
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  border-radius: 2rem;
+  box-shadow: 8px 8px 0px 0px rgba(0, 0, 0, 1);
+  border: 1px solid var(--black-color);
+}
+
+.card__info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.card__category {
+  background-color: var(--orange-color);
+  padding: 0.4rem 1.2rem;
+  border-radius: 0.4rem;
+  font-size: 1.4rem;
+  font-weight: 800;
+  line-height: 2.1rem;
+  width: 8.2rem;
+  height: 2.9rem;
+}
+
+.card__date {
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 2.1rem;
+  color: var(--black-color);
+}
+
+.card__link {
+  font-size: 2.4rem;
+  font-weight: 800;
+  line-height: 2.6rem;
+}
+
+.card__link:active {
+  color: var(--orange-color);
+}
+
+.card__description {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  font-weight: 500;
+  color: rgba(127, 127, 127, 1);
+}
+
+.card__profile {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.card__profile__name {
+  font-size: 1.4rem;
+  font-weight: 800;
+  line-height: 2.1rem;
+  color: var(--black-color);
+}
